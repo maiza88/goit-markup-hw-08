@@ -1,0 +1,20 @@
+.section-hero__button {
+  color: $secondary-title-text-color;
+  background-color: $accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+
+  transition: background-color $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
+}
