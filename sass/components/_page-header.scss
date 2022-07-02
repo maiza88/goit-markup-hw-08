@@ -16,10 +16,7 @@
 
 .site-nav {
   display: flex;
-}
-
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
+  column-gap: 50px;
 }
 
 .site-nav__link {
@@ -64,10 +61,7 @@
 .auth-nav {
   display: flex;
   margin-left: auto;
-}
-
-.auth-nav__item:not(:last-child) {
-  margin-right: 50px;
+  column-gap: 50px;
 }
 
 .auth-nav__link {

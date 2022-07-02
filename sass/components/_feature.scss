@@ -1,9 +1,6 @@
 .feature-list {
   display: flex;
-}
-
-.feature-list__item:not(:last-child) {
-  margin-right: 30px;
+  column-gap: 30px;
 }
 
 .feature-list__title {

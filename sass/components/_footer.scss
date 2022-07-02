@@ -47,6 +47,7 @@ footer .container {
 
 .footer-soc-link__list {
   display: flex;
+  column-gap: 10px;
 }
 
 .footer-soc-link__item {
@@ -59,9 +60,6 @@ footer .container {
   &:hover,
   &:hover {
     background-color: $accent-color;
-  }
-  &:not(:last-child) {
-    margin-right: 10px;
   }
 }
 
