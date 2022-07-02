@@ -8,20 +8,20 @@ footer .container {
   display: flex;
   align-items: center;
   flex-direction: column;
+  row-gap: 60px;
 
   @include tablet {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 135px;
-    row-gap: 60px;
   }
 
   @include desktop {
     justify-content: flex-start;
     align-items: flex-start;
-    flex-direction: row;
     flex-wrap: nowrap;
+    gap: 0px;
   }
 }
 
@@ -57,10 +57,7 @@ footer .container {
 }
 
 .footer-soc-link {
-  margin-bottom: 20px;
-
   @include desktop {
-    margin-bottom: 0px;
     margin-right: 93px;
   }
 }
@@ -71,11 +68,12 @@ footer .container {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-top: 12px;
+  margin-top: 0px;
   margin-bottom: 20px;
 
   text-align: center;
   @include desktop {
+    margin-top: 12px;
     text-align: start;
   }
 }

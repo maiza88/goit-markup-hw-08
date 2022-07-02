@@ -49,10 +49,16 @@
 .team-section__title {
   color: $title-text-color;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.14;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include desktop {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .team-section__info-title {
@@ -77,7 +83,11 @@
   display: flex;
   justify-content: center;
   column-gap: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+
+  @include desktop {
+    padding-bottom: 30px;
+  }
 }
 
 .soc-list__item {

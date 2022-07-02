@@ -1,10 +1,13 @@
 .page-header__menu-open-btn {
+    all: unset;
+    cursor: pointer;
+
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
-  
+
     @include tablet {
       display: none;
     }
@@ -16,6 +19,9 @@
   }
 
   .page-header__close-btn {
+    all: unset;
+    cursor: pointer;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,6 +60,7 @@
       justify-content: space-between;
       height: 100%;
       overflow-y: auto;
+      padding-left: 40px;
     }
   }
 
@@ -90,7 +97,35 @@
     margin-bottom: 64px;
   }
 
+  .mob-menu__contact-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+
+  .mob-menu__contact-email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+  }
+
   .mob-menu__soc-list {
     display: flex;
     gap: 10px;
+  }
+
+  .mob-menu__soc-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+  }
+
+  .mob-menu__soc-separator {
+    color: rgba(33, 33, 33, 0.2);
   }

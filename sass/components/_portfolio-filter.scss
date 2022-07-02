@@ -1,11 +1,18 @@
 .filter-section__list {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
   column-gap: 8px;
+  row-gap: 15px;
   flex-wrap: wrap;
   justify-content: flex-start;
+  
   @include tablet {
+    margin-bottom: 30px;
     justify-content: center;
+  }
+  
+  @include desktop {
+    margin-bottom: 50px;
   }
 }
 
