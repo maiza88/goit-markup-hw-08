@@ -47,16 +47,16 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 480px;
+  max-width: 480px;
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -198,7 +198,7 @@ img {
 .hero-section {
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   background-color: #2f303a;
@@ -214,7 +214,6 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero-section {
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-img-tablet.jpg);
   }
 }
@@ -410,7 +409,7 @@ img {
 }
 
 .team-section__picture {
-  width: 450px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .team-section__picture {
@@ -709,6 +708,7 @@ footer .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .form-subscription {
@@ -735,6 +735,7 @@ footer .container {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .form-subscription__email {
@@ -746,7 +747,7 @@ footer .container {
 
 .form-subscription__input {
   color: rgba(255, 255, 255, 0.6);
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -757,6 +758,11 @@ footer .container {
   transition-property: box-shadow, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .form-subscription__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-subscription__input {
@@ -1069,7 +1075,7 @@ footer .container {
 }
 
 .project-picture {
-  width: 450px;
+  width: 100%;
   height: 294px;
 }
 @media screen and (min-width: 768px) {
@@ -1084,6 +1090,7 @@ footer .container {
 }
 
 .project-list__item {
+  display: flex;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
@@ -1109,10 +1116,16 @@ footer .container {
   transform: translateY(0);
 }
 
+.project-list__item-link {
+  display: flex;
+  flex-direction: column;
+}
+
 .project-list__info-block {
   border: 1px solid #eeeeee;
   border-top-color: transparent;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .project-list__info-name {

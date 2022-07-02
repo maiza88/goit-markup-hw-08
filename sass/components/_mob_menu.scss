@@ -1,131 +1,131 @@
 .page-header__menu-open-btn {
-    all: unset;
-    cursor: pointer;
+  all: unset;
+  cursor: pointer;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
 
-    @include tablet {
-      display: none;
-    }
-  
-    &:hover,
-    &:focus {
-      fill: $accent-color;
-    }
+  @include tablet {
+    display: none;
   }
 
-  .page-header__close-btn {
-    all: unset;
-    cursor: pointer;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    margin-left: auto;
-  
-    @include tablet {
-      display: none;
-    }
-  
-    &:hover,
-    &:focus {
-      fill: $accent-color;
-    } 
+  &:hover,
+  &:focus {
+    fill: $accent-color;
   }
-  
-  .mob-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: #ffffff;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 10px;
-    padding-bottom: 48px;
+}
 
-    @include tablet {
-        display: none;
-    }
+.page-header__close-btn {
+  all: unset;
+  cursor: pointer;
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      overflow-y: auto;
-      padding-left: 40px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+
+  @include tablet {
+    display: none;
   }
 
-  .mob-menu__list {
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 48px;
+
+  @include tablet {
+    display: none;
+  }
+
+  .container {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: auto;
+    padding-left: 40px;
   }
+}
 
-  .mob-menu__link {
-    color: $title-text-color;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.02em;
+.mob-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.mob-menu__link {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.02em;
 
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
-  }
-  
-  .mob-menu__link--current {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
+}
 
-  .mob-menu__contacts-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
-    margin-bottom: 64px;
-  }
+.mob-menu__link--current {
+  color: $accent-color;
+}
 
-  .mob-menu__contact-tel {
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: $accent-color;
-  }
+.mob-menu__contacts-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  margin-bottom: 64px;
+}
 
-  .mob-menu__contact-email {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
-    color: $primary-text-color;
-  }
+.mob-menu__contact-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
 
-  .mob-menu__soc-list {
-    display: flex;
-    gap: 10px;
-  }
+.mob-menu__contact-email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+}
 
-  .mob-menu__soc-link {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    color: $accent-color;
-  }
+.mob-menu__soc-list {
+  display: flex;
+  gap: 10px;
+}
 
-  .mob-menu__soc-separator {
-    color: rgba(33, 33, 33, 0.2);
-  }
+.mob-menu__soc-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
+
+.mob-menu__soc-separator {
+  color: rgba(33, 33, 33, 0.2);
+}

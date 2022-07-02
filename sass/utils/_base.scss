@@ -46,14 +46,14 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 480px;
-  
+  max-width: 480px;
+
   @include tablet {
-    width: 768px;
+    max-width: 768px;
   }
 
   @include desktop {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 

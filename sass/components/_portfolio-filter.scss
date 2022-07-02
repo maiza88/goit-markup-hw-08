@@ -5,12 +5,12 @@
   row-gap: 15px;
   flex-wrap: wrap;
   justify-content: flex-start;
-  
+
   @include tablet {
     margin-bottom: 30px;
     justify-content: center;
   }
-  
+
   @include desktop {
     margin-bottom: 50px;
   }
