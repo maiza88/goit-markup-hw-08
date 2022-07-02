@@ -1,6 +1,24 @@
 .feature-list {
   display: flex;
   column-gap: 30px;
+  flex-direction: column;
+
+  @include tablet{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+.feature-list__item {
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .feature-list__title {

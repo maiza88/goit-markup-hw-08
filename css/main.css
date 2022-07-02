@@ -39,9 +39,19 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .page-header__logo {
@@ -223,6 +233,26 @@ img {
 .feature-list {
   display: flex;
   column-gap: 30px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .feature-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .feature-list__title {
