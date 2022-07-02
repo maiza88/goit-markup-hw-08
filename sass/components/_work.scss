@@ -1,11 +1,16 @@
 .work-section {
+  display: none;
   padding-top: 0;
+
+  @include desktop {
+    display: block;
+  }
 }
 
 .work-list {
-  display: flex;
+    display: flex;
+    column-gap: 30px;
 }
-
 .work-title {
   color: $title-text-color;
   font-weight: 700;
@@ -17,8 +22,6 @@
 
 .work-list__item {
   position: relative;
-
-  margin-right: 30px;
 }
 
 .work-list__name {
