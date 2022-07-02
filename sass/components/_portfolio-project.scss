@@ -1,14 +1,30 @@
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
+.project-picture {
+  width: 450px;
+  height: 294px;
 
+  @include tablet {
+    width: 354px;
+  }
+
+  @include desktop {
+    width: 370px;
+  }
+}
 .project-list__item {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-
   transition: box-shadow $transition-duration $transition-timing-function;
+
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 
   &:hover,
   &:focus {

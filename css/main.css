@@ -436,22 +436,39 @@ img {
 
 .clients-section__list {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .clients-section__list {
+    flex-wrap: nowrap;
+  }
 }
 
 .clients-section__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(16.6666666667% - 25px);
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition-property: border-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients-section__item {
+    flex-basis: calc((100% - 30px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-section__item {
+    flex-basis: calc((100% - 30px) / 6);
+  }
 }
 .clients-section__item:hover, .clients-section__item:focus {
   border-color: #2196f3;
@@ -835,10 +852,16 @@ footer .container {
 }
 
 .filter-section__list {
-  display: flex;
-  justify-content: center;
   margin-bottom: 50px;
+  display: flex;
   column-gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .filter-section__list {
+    justify-content: center;
+  }
 }
 
 .filter-section__button {
@@ -867,13 +890,36 @@ footer .container {
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-picture {
+  width: 450px;
+  height: 294px;
+}
+@media screen and (min-width: 768px) {
+  .project-picture {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-picture {
+    width: 370px;
+  }
 }
 
 .project-list__item {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .project-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-list__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .project-list__item:hover, .project-list__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
