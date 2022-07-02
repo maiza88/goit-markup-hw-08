@@ -1,3 +1,13 @@
+.form-subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include desktop {
+    display: block;
+  }
+}
+
 .form-subscription__title {
   color: $primary-bg-color;
   font-weight: 700;
@@ -10,6 +20,15 @@
 
 .form-subscription__email {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include desktop {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0px;
+  }
 }
 
 .form-subscription__input {

@@ -6,8 +6,33 @@ footer {
 
 footer .container {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  @include tablet {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 135px;
+    row-gap: 60px;
+  }
+
+  @include desktop {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include desktop {
+    display: block;
+  }
 }
 
 .footer-list__address {
@@ -32,7 +57,12 @@ footer .container {
 }
 
 .footer-soc-link {
-  margin-right: 93px;
+  margin-bottom: 20px;
+
+  @include desktop {
+    margin-bottom: 0px;
+    margin-right: 93px;
+  }
 }
 
 .footer-soc-link__title {
@@ -43,6 +73,11 @@ footer .container {
   text-transform: uppercase;
   margin-top: 12px;
   margin-bottom: 20px;
+
+  text-align: center;
+  @include desktop {
+    text-align: start;
+  }
 }
 
 .footer-soc-link__list {

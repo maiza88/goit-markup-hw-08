@@ -1,5 +1,14 @@
 .footer-logo {
-  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @include desktop {
+    display: block;
+    margin-right: 70px;
+    margin-bottom: 0px;
+  }
 }
 
 .footer-logo__first {

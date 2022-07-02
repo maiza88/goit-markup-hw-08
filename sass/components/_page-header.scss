@@ -11,12 +11,23 @@
 
 .page-header__container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  height: 60px;
+
+  @include tablet {
+    height: 80px;
+    justify-content: flex-start;
+  }
 }
 
 .site-nav {
-  display: flex;
-  column-gap: 50px;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    column-gap: 50px;
+  }
 }
 
 .site-nav__link {
@@ -59,9 +70,18 @@
 }
 
 .auth-nav {
-  display: flex;
-  margin-left: auto;
-  column-gap: 50px;
+  display: none;
+  @include tablet {
+    display: flex;
+    margin-left: auto;
+    column-gap: 50px;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 .auth-nav__link {
@@ -70,8 +90,6 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: flex;
   align-items: center;
 
